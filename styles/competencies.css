@@ -1,0 +1,148 @@
+/*компетенции*/
+.competencies-section {
+    margin-top: 150px;
+    width: 1153px;
+}
+
+.competencies-head {
+    margin-bottom: 139px;
+    color: #fff;
+    font-size: 55px;
+    line-height: 72px;
+}
+
+.competencies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 100px;
+}
+
+.competence {
+    position: relative;
+    width: calc(50% - 25px);
+}
+
+.competence__title {
+    margin-bottom: 15px;
+    color: #1bff07;
+    font-size: 35px;
+    line-height: 46px;
+}
+
+.competence__text {
+    color: #fff;
+    font-size: 22px;
+    line-height: 29px;
+}
+
+.competence:before {
+    position: absolute;
+    top: -56px;
+    left: 2px;
+    content: '';
+    display: block;
+    width: 45px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+#comp-1:before {
+    background-image: url(../resources/competencies-1.png);
+}
+
+#comp-2:before {
+    background-image: url(../resources/competencies-2.png);
+}
+
+#comp-3:before {
+    background-image: url(../resources/competencies-3.png);
+}
+
+#comp-4:before {
+    background-image: url(../resources/competencies-4.png);
+}
+
+
+
+/*Планшет*/
+@media (max-width: 1199px) {
+    .competencies-section {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+    }
+
+    .competencies-head {
+        margin-bottom: 106px;
+        font-size: 45px;
+        line-height: 59px;
+    }
+
+    .competencies {
+        row-gap: 84px;
+    }
+
+    .competence__title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .competence__text {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .competence:before {
+        top: -46px;
+        left: 0;
+        width: 36px;
+        height: 36px;
+    }
+}
+
+
+
+/*Телефон*/
+@media (max-width: 767px) {
+    .competencies-section {
+        margin-top: 100px;
+        padding-left: 13px;
+        padding-right: 12px;
+        width: 100%;
+    }
+
+    .competencies-head {
+        margin-bottom: 106px;
+        font-size: 30px;
+        line-height: 39px;
+    }
+
+    .competencies {
+        flex-direction: column;
+        row-gap: 84px;
+    }
+
+    .competence {
+        width: 100%;
+    }
+
+    .competence__title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .competence__text {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .competence:before {
+        top: -46px;
+        left: 0;
+        width: 36px;
+        height: 36px;
+    }
+}

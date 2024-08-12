@@ -1,0 +1,103 @@
+@import url(nav.css);
+@import url(burger.css);
+@import url(projects.css);
+@import url(competencies.css);
+@import url(services.css);
+@import url(contacts.css);
+@import url(footer.css);
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+}
+
+section {
+    margin: 0 auto;
+}
+
+h1, h2, p, a, button {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.03em;
+}
+
+/*Загловок*/
+header {
+    padding: 27px 0 94px;
+    background-image: url(../resources/header-background.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.header__content {
+    margin: 0 auto;
+    margin-top: 250px;
+    width: 1160px;
+}
+
+.develope {
+    margin-left: 5px;
+    margin-bottom: 30px;
+    width: 430px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.about-me {
+    width: 919px;
+    color: #1bff07;
+    font-size: 80px;
+    line-height: 70px;
+}
+
+
+/*Планшет*/
+@media (max-width: 1199px) {
+    header {
+        padding: 23px 10px 60px;
+    }
+
+    .header__content {
+        margin-top: 290px;
+        width: 100%;
+    }
+
+    .about-me {
+        width: 727px;
+        font-size: 60px;
+    }
+}
+
+
+/*Телефон*/
+@media (max-width: 767px) {
+    header {
+        padding: 23px 10px 60px;
+    }
+
+    .header__content {
+        margin-top: 260px;
+        width: 100%;
+    }
+
+    .develope {
+        margin-bottom: 10px;
+        width: 310px;
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .about-me {
+        width: 100%;
+        font-size: 40px;
+        line-height: 50px;
+    }
+}

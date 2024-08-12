@@ -1,0 +1,132 @@
+.contacts-section {
+    margin-top: 150px;
+    padding: 100px 125px;
+    background-color: #191c19;
+    background-image: url(../resources/contacts-image.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    border-radius: 30px;
+}
+
+.contacts-head {
+    width: 550px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #fff;
+}
+
+.inputs-wrapper {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.input {
+    padding: 15px 40px;
+    width: 567px;
+    height: 60px;
+    font-size: 22px;
+    line-height: 30px;
+    color: #fff;
+    background: #3b3d3b;
+    border-radius: 60px;
+}
+
+.contacts__send-btn {
+    margin-top: 60px;
+    width: 450px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: #1bff07;
+    font-size: 22px;
+    line-height: 70px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contacts__send-btn:hover {
+    color: #1bff07;
+    background-color: #191c19;
+    border: 2px solid #1bff07;
+}
+
+
+
+/*Планшет*/
+@media (max-width: 1199px) {
+    .contacts-section {
+        margin-top: 110px;
+        padding: 50px 50px 86px 50px;
+        border-radius: 20px;
+    }
+
+    .contacts-head {
+        width: 370px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .inputs-wrapper {
+        margin-top: 40px;
+        gap: 17px;
+    }
+
+    .input {
+        padding: 10px 24px;
+        width: 383px;
+        height: 41px;
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .contacts__send-btn {
+        margin-top: 40px;
+        width: 304px;
+        height: 47px;
+        border-radius: 7px;
+        font-size: 16px;
+        line-height: 47px;
+    }
+}
+
+
+/*Телефон*/
+@media (max-width: 767px) {
+    .contacts-section {
+        margin-top: 100px;
+        padding: 50px 12px 52px 13px;
+        background-image: none;
+        border-radius: 0;
+    }
+
+    .contacts-head {
+        width: 100%;
+        font-size: 35px;
+        line-height: 37px;
+    }
+
+    .inputs-wrapper {
+        margin-top: 40px;
+        gap: 15px;
+    }
+
+    .input {
+        padding: 9px 21px;
+        width: 100%;
+        height: 38px;
+        font-size: 15px;
+        line-height: 20px;
+        box-sizing: border-box;
+    }
+
+    .contacts__send-btn {
+        margin-top: 40px;
+        width: 100%;
+        height: 43px;
+        border-radius: 6px;
+        font-size: 15px;
+        line-height: 43px;
+    }
+}

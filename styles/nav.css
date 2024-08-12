@@ -1,0 +1,63 @@
+.navigation {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1165px;
+    height: 55px;
+}
+
+.logo {
+    padding: 5px 20px;
+    height: 55px;
+    font-size: 42px;
+    line-height: 45px;
+    font-weight: 700;
+    letter-spacing: -0.11em;
+    text-align: center;
+    color: #1bff07;
+    background-color: #000;
+    border-radius: 55px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.nav-link {
+    line-height: 23px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #1bff07;
+}
+
+
+
+/*Планшет*/
+@media (max-width: 1199px) {
+    .navigation {
+        width: 100%;
+    }
+
+    .nav {
+        display: none;
+    }
+}
+
+
+/*Телефон*/
+@media (max-width: 767px) {
+    .navigation {
+        width: 100%;
+    }
+
+    .nav {
+        display: none;
+    }
+}
